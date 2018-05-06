@@ -30,6 +30,8 @@ body, html {
 }
 
 .left-sidebar {
+  border-top: 4px solid var(--yellow);
+  border-bottom: 4px solid var(--yellow);
   text-align: center;
   height: 100%;
   width: 300px;
