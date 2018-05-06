@@ -1,0 +1,339 @@
+:root {
+  --yellow: #ffc600;
+  --black: #111;
+  --white: #d1d1c7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  outline: 0;
+}
+
+body, html {
+  background-color: #111;
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+}
+/* Global & Index.html */
+
+.active {
+  color: var(--yellow);
+  text-decoration: line-through;
+}
+
+.front-page {
+  display: grid;
+}
+
+.left-sidebar {
+  text-align: center;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left-sidebar-menu {
+  margin: 250px 10px 10px 10px;
+}
+
+.left-sidebar-menu ul {
+  list-style-type: none;
+}
+
+.left-sidebar-menu a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.left-sidebar-menu a:hover {
+  color: var(--yellow);
+}
+
+.left-sidebar-menu li {
+  margin: 20px;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeIn {
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeOut 5s; /* Firefox < 16 */
+        -ms-animation: fadeOut 5s; /* Internet Explorer */
+         -o-animation: fadeOut 5s; /* Opera < 12.1 */
+            animation: fadeOut 5s;
+}
+
+.home-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+  text-align: right;
+  height: 741px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.hc-image1 {
+  background-image: url(../images/design2.jpg);
+}
+
+.hc-image2 {
+  background-image: url(../images/design1.jpg);
+}
+
+.home-content ul {
+  transition: 5s;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+.home-content li a {
+  text-decoration: none;
+  grid-gap: 20px;
+  margin: 10px;
+  color: var(--yellow);
+}
+
+.hero {
+  color: var(--black);
+  font-size: 20px;
+}
+
+.hero-content {
+  font-size: 50px;
+  margin: 250px 50px 50px 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content p {
+  color: var(--yellow);
+}
+
+.hero-content h1 {
+  font-size: 120px;
+}
+
+.hero-content a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 20px;
+  padding: 10px;
+  margin: 125px 5px 5px 5px;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50px;
+}
+
+.hero-content a:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+  opacity: 0.9;
+  box-shadow: 5px 5px 20px black;
+}
+
+/*  Projects Page*/
+.left-sidebar-logo {
+  color: var(--yellow);
+}
+
+.left-sidebar-logo a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+#contact-links {
+  font-size: 30px;
+}
+
+#sidebar-contact-links {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#sidebar-contact-links li {
+  list-style-type: none;
+}
+
+#sidebar-contact-links {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* #sidebar-contact-links a:hover {
+  color: var(--yellow);
+} */
+
+.project-wrap {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--yellow);
+  background: var(--black);
+  grid-gap: 10px;
+  padding-left: 200px;
+  display: grid;
+  grid-template-columns: 1fr 700px;
+}
+
+.project-wrap img {
+  height: 500px;
+  width: 800px;
+}
+
+.project-wrap:hover {
+  opacity: 0.9;
+}
+
+.project-content {
+  text-align: center;
+  align-items: center;
+  padding: 50px 100px 50px 50px;
+}
+
+/* Offices  */
+
+.offices {
+  color: var(--yellow);
+  text-align: center;
+  padding-left: 300px;
+  display: grid;
+  grid-gap: 20px;
+  margin: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.office-card1 {
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--black);
+  background-image: url(../images/location1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.office-card2 {
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--black);
+  background-image: url(../images/location2.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.office-card3 {
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--black);
+  background-image: url(../images/location3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.office-card1:hover, .office-card2:hover, .office-card3:hover {
+  opacity: 0.9;
+}
+
+/* About */
+.about-wrap {
+  display: grid;
+  /* background-image: url(../images/ann.jpg); */
+  /* height: 170%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--black);
+  color: var(--black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 300px;
+}
+
+.about-content {
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 100px;
+}
+
+.about-nav {
+  list-style-type: none;
+  padding: 50px;
+}
+
+.about-founders,
+.about-nav {
+  color: var(--yellow);
+  font-size: 20px;
+}
+
+.about {
+  padding: 50px;
+}
+
+.about img {
+  border-radius: 100px;
+  height: 120px;
+  width: 130px;
+}
+
+.about-founders {
+  padding: 5px;
+  background-color: var(-black);
+}
+
+/*  Careers */
+.careers {
+  margin-left: 300px;
+  text-align: center;
+  color: var(--black);
+}
+
+.developer, .designer, .leadProductionManager {
+  background-color: var(--yellow);
+  padding: 50px;
+  border-color: var(--black);
+  border: 1px solid var(--black);
+  font-size: 20px;
+}
+
+.developer:hover, .designer:hover, .leadProductionManager:hover {
+  opacity: 0.8;
+}
